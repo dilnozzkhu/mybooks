@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Book description</title>
+</head>
+<body>
+    <h1>{{ book.title }}</h1>
+    <p>{{ book.desc }}</p>
+    <p><strong>Author:</strong> {{ book.author }}</p>
+
+    <a href="{% url 'Books:list' %}" class="back-link">Back</a>
+</body>
+</html>

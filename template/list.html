@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>book list</title>
+</head>
+<body>
+    <h1>Books</h1>
+    <ol>
+        {% for book in boks %}
+            <li>
+                <a href="{% url 'Books:detail' pk=book.pk %}">{{ book.title }}</a>
+            </li>
+        {% endfor %}
+    </ol>
+</body>
+</html>
